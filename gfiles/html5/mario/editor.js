@@ -448,7 +448,7 @@ function editorScrollingStart(event) {
   var scroller = event.target,
       dx = scroller.dx;
   editorPreventClicks();
-  editor.scrolling = TimeHandler.addEventInterval(editorScrolling, 1, Infinity, -dx);
+  editor.scrolling = TimeHandler.addEventInterval(editorScrolling, 16, Infinity, -dx);
   classRemove(editor.scrollers["left"], "off");
 }
 function editorScrollingStop() {
